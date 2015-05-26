@@ -11,11 +11,16 @@ import WatchKit
 
 class InterfaceController: WKInterfaceController {
     
+    @IBOutlet var handAnimation: WKInterfaceImage!
     
     @IBOutlet var productTable: WKInterfaceTable!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        
+        self.handAnimation.setImageNamed("AppIconSmall@2x_")
+        
+        self.handAnimation.startAnimatingWithImagesInRange(NSMakeRange(0, 67), duration: 3, repeatCount: 1)
         
         // Configure interface objects here.
         loadTableData()

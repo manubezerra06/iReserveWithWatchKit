@@ -12,10 +12,12 @@
                     <items>
                         <group width="1" alignment="left" id="f6k-Ov-RNW">
                             <items>
-                                <label width="136" height="37" alignment="left" text="Minhas Reservas" textAlignment="center" numberOfLines="0" id="SHc-my-uv2">
+                                <imageView width="40" height="1" alignment="left" image="AppIconSmall@2x_0" contentMode="scaleAspectFit" id="sZJ-Z2-jlg"/>
+                                <label height="37" alignment="left" text="Minhas Reservas" textAlignment="left" numberOfLines="0" id="SHc-my-uv2">
                                     <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                 </label>
                             </items>
+                            <color key="backgroundColor" red="0.61495910389999997" green="0.099800020789999999" blue="0.1397536264" alpha="1" colorSpace="calibratedRGB"/>
                         </group>
                         <table alignment="left" id="p3w-v5-mt8">
                             <items>
@@ -36,6 +38,7 @@
                         <group width="1" height="42" alignment="left" id="BMy-ie-1hb"/>
                     </items>
                     <connections>
+                        <outlet property="handAnimation" destination="sZJ-Z2-jlg" id="8f6-jX-eKF"/>
                         <outlet property="productTable" destination="p3w-v5-mt8" id="Wsf-1H-vQh"/>
                     </connections>
                 </controller>
@@ -47,10 +50,14 @@
             <objects>
                 <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="iReserve_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw">
+                        <group alignment="left" id="t8f-Gd-c4y">
                             <items>
-                                <label width="136" height="116" alignment="left" text="Procurando reservas..." textAlignment="center" numberOfLines="0" id="wNY-e5-YpP">
+                                <imageView height="99" alignment="center" verticalAlignment="center" image="iconRounded" contentMode="scaleAspectFit" id="XAD-xY-9Ew"/>
+                            </items>
+                        </group>
+                        <group alignment="left" contentMode="scaleAspectFit" id="uCw-4Q-Ouw">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Procurando reservas..." textAlignment="center" numberOfLines="0" id="wNY-e5-YpP">
                                     <color key="textColor" red="1" green="0.92630261538485947" blue="0.23589203170205642" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                 </label>
