@@ -48,17 +48,24 @@
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="iReserve_WatchKit_App" customModuleProvider="target">
+                <glanceController spacing="0.0" topTemplateType="groupLeftLarge" id="0uZ-2p-rRc" customClass="GlanceController" customModule="iReserve_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y">
+                        <group alignment="left" contentMode="scaleAspectFit" id="t8f-Gd-c4y">
                             <items>
-                                <imageView height="99" alignment="center" verticalAlignment="center" image="iconRounded" contentMode="scaleAspectFit" id="XAD-xY-9Ew"/>
+                                <imageView alignment="center" verticalAlignment="center" image="iconRounded" contentMode="scaleAspectFit" id="XAD-xY-9Ew">
+                                    <color key="tintColor" red="0.61495910389999997" green="0.099800020789999999" blue="0.1397536264" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
                             </items>
                         </group>
+                        <label alignment="left" id="LAb-Zi-o4N"/>
+                        <label alignment="left" text="iReserve" id="1fz-vJ-dTZ">
+                            <color key="textColor" red="0.90196078431372551" green="0.65098039215686276" blue="0.12941176470588237" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label alignment="left" id="GPs-BL-lrm"/>
                         <group alignment="left" contentMode="scaleAspectFit" id="uCw-4Q-Ouw">
                             <items>
                                 <label alignment="center" verticalAlignment="center" text="Procurando reservas..." textAlignment="center" numberOfLines="0" id="wNY-e5-YpP">
-                                    <color key="textColor" red="1" green="0.92630261538485947" blue="0.23589203170205642" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.85490196078431369" green="0.85882352941176465" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                 </label>
                             </items>
