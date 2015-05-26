@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="iReserve_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="f6k-Ov-RNW">
+                            <items>
+                                <label width="136" height="37" alignment="left" text="Minhas Reservas" textAlignment="center" numberOfLines="0" id="SHc-my-uv2">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                        <table alignment="left" id="p3w-v5-mt8">
+                            <items>
+                                <tableRow identifier="ReservaRowViewController" id="8gy-Qg-DXa" customClass="ReservaRowViewController" customModule="iReserve_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="8Xw-36-Pjk">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" textAlignment="left" numberOfLines="0" id="X5H-sY-9d1">
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="nameLabel" destination="X5H-sY-9d1" id="zxY-av-zIi"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <group width="1" height="42" alignment="left" id="BMy-ie-1hb"/>
+                    </items>
+                    <connections>
+                        <outlet property="productTable" destination="p3w-v5-mt8" id="Wsf-1H-vQh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="205" y="363"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="iReserve_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw">
+                            <items>
+                                <label width="136" height="116" alignment="left" text="Procurando reservas..." textAlignment="center" numberOfLines="0" id="wNY-e5-YpP">
+                                    <color key="textColor" red="1" green="0.92630261538485947" blue="0.23589203170205642" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="reservasLabel" destination="wNY-e5-YpP" id="FKN-a7-gE0"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="205" y="670"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="205" y="989"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="iReserve_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="989"/>
+        </scene>
+    </scenes>
+</document>

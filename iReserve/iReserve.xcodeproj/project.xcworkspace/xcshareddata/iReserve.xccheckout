@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CCD0F471-F3A2-48DB-A7DF-A9185B85928A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iReserve</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E36C13D3CA6E9D2CEF6524C0AB986EFB87590335</key>
+		<string>https://github.com/felipedemetrius/iReserve.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iReserve/iReserve.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E36C13D3CA6E9D2CEF6524C0AB986EFB87590335</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/felipedemetrius/iReserve.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E36C13D3CA6E9D2CEF6524C0AB986EFB87590335</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E36C13D3CA6E9D2CEF6524C0AB986EFB87590335</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iReserve</string>
+		</dict>
+	</array>
+</dict>
+</plist>
