@@ -205,5 +205,19 @@ extension AppDelegate: CLLocationManagerDelegate {
             NSLog("You exited the region")
             //sendLocalNotificationWithMessage("You exited the region")
     }
+    
+    
+    //HANDOFF
+    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]!) -> Void) -> Bool {
+        
+        if let win = window {
+            let configViewController = win.rootViewController as! ConfigViewController
+            
+            configViewController.restoreUserActivityState(userActivity)
+        }
+        
+        return true
+    }
+    
 }
 

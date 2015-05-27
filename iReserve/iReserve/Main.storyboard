@@ -533,6 +533,18 @@
                                             <action selector="logoutButtonClick:" destination="b0C-Lz-QqY" eventType="touchUpInside" id="Wn6-Jf-bFh"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyY-qd-1JJ">
+                                        <rect key="frame" x="218" y="386" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkW-eM-HLk">
+                                        <rect key="frame" x="279" y="386" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.99786184209999995" green="0.99786184209999995" blue="0.99786184209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.99786184209999995" green="0.99786184209999995" blue="0.99786184209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Bvn-j3-Rcq" firstAttribute="top" secondItem="IbC-vd-1bR" secondAttribute="top" constant="148" id="Asm-Gg-cLL"/>
@@ -568,6 +580,7 @@
                     </view>
                     <connections>
                         <outlet property="emailLabel" destination="xMh-Gl-p8j" id="BV0-Dg-c55"/>
+                        <outlet property="handoffLbl" destination="WkW-eM-HLk" id="Cxq-LD-GZw"/>
                         <outlet property="logoutButton" destination="hqD-zj-5LV" id="4Jz-21-0Cy"/>
                         <outlet property="usernameLabel" destination="Bvn-j3-Rcq" id="pkm-kh-d0s"/>
                         <segue destination="z21-vf-ESG" kind="presentation" identifier="toLogin" id="uKu-7N-Oha"/>

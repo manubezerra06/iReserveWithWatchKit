@@ -74,9 +74,7 @@ class ViewController: UIViewController {
                 
                 self.usernameTextField.text = ""
                 self.passwordTextField.text = ""
-                
-                
-                
+            
                 let alert = UIAlertView()
                 alert.title = "Login Error"
                 alert.message = "Dados informados não conferem, tente novamente"
@@ -85,6 +83,7 @@ class ViewController: UIViewController {
                 
             }
         }
-    }
+    }    
+    
 }
 

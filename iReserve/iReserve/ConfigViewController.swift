@@ -14,6 +14,9 @@ class ConfigViewController: UIViewController {
     @IBOutlet var usernameLabel: UILabel!
     @IBOutlet var logoutButton: UIButton!
     @IBOutlet var emailLabel: UILabel!
+    //HANDOFF
+    @IBOutlet weak var handoffLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,4 +39,14 @@ class ConfigViewController: UIViewController {
         
         self.performSegueWithIdentifier("toLogin", sender: self)
     }
+    
+    //HANDOFF
+    override func restoreUserActivityState(activity: NSUserActivity) {
+    
+        let userInfo = activity.userInfo
+        handoffLbl.text =  userInfo!["xablau"] as? String
+        
+        super.restoreUserActivityState(activity)
+    }
+    
 }
