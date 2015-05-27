@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>CCD0F471-F3A2-48DB-A7DF-A9185B85928A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>iReserve</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D80A3AA3AF56580EFF1A03EF2EB83205E965B077</key>
 		<string>https://github.com/manubezerra06/iReserveWithWatchKit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iReserve/iReserve.xcodeproj/project.xcworkspace</string>
+	<string>iReserve/iReserve.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D80A3AA3AF56580EFF1A03EF2EB83205E965B077</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>D80A3AA3AF56580EFF1A03EF2EB83205E965B077</string>
 			<key>IDESourceControlWCCName</key>
-			<string>iRsrv</string>
+			<string>iReserveWithWatchKit</string>
 		</dict>
 	</array>
 </dict>

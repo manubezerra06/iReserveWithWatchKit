@@ -24,6 +24,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         didFinishLaunchingWithOptions launchOptions:
         [NSObject: AnyObject]?) -> Bool {
             
+            //Notification Watch Meirelles
+            
+            let completeAction = UIMutableUserNotificationAction()
+            completeAction.identifier = "COMPLETE_TODO" // the unique identifier for this action
+            completeAction.title = "Complete" // title for the action button
+            completeAction.activationMode = .Background // UIUserNotificationActivationMode.Background - don't bring app to foreground
+            completeAction.authenticationRequired = true // don't require unlocking before performing action
+            completeAction.destructive = true // display action in red
+            
+            
+            
+            let todoCategory = UIMutableUserNotificationCategory() // notification categories allow us to create groups of actions that we can associate with a notification
+            todoCategory.identifier = "TODO_CATEGORY"
+            todoCategory.setActions([completeAction], forContext: .Default) // UIUserNotificationActionContext.Default (4 actions max)
+            todoCategory.setActions([completeAction], forContext: .Minimal) // UIUserNotificationActionContext.Minimal - for when space is limited (2 actions max)
+
+            
         //iBeacon
 
         let uuidString = "D0D3FA86-CA76-45EC-9BD9-6AF4505D009C"
@@ -132,6 +149,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 }
+
+
+func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
+    
+    println(notification.userInfo!["title"] as! String)
+    
+    switch (identifier!) {
+    case "COMPLETE_TODO":
+        println("COMPLETE TODO")
+    default: // switch statements must be exhaustive - this condition should never be met
+        println("Error: unexpected notification action identifier!")
+    }
+    completionHandler() // per developer documentation, app will terminate if we fail to call this
+}
+
 
 extension AppDelegate: CLLocationManagerDelegate {
     func sendLocalNotificationWithMessage(message: String!) {
