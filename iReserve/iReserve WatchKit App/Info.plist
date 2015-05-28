@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>ireserve.com</string>
+	<string>ireserveWK.com</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
