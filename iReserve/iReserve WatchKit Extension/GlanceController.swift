@@ -19,7 +19,7 @@ class GlanceController: WKInterfaceController {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
-        self.updateUserActivity("ireserveWK.com.Glance", userInfo: ["xablau": "Veio do Handoff!"], webpageURL: nil)
+        self.updateUserActivity("ireserve.com.Glance", userInfo: ["xablau": "Veio do Handoff!"], webpageURL: nil)
     }
 
     override func willActivate() {
