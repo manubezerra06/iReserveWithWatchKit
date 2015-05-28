@@ -11,13 +11,13 @@ import MapKit
 import Parse
 import ParseUI
 import UIKit
-import StoreKit
+//import StoreKit
 
-class ProductTableMapViewController: PFQueryTableViewController, SKPaymentTransactionObserver, SKProductsRequestDelegate //, UITableViewDelegate, UITableViewDataSource
+class ProductTableMapViewController: PFQueryTableViewController//, SKPaymentTransactionObserver, SKProductsRequestDelegate , UITableViewDelegate, UITableViewDataSource
 {
     @IBOutlet var optionSegmentedControl: UISegmentedControl!
     
-    var product: SKProduct?
+    //var product: SKProduct?
     var productID = "premium"
 
     
@@ -25,7 +25,7 @@ class ProductTableMapViewController: PFQueryTableViewController, SKPaymentTransa
         super.init(style: style, className: className)
     }
     
-    func paymentQueue(queue: SKPaymentQueue!, updatedTransactions transactions: [AnyObject]!){
+     /* func paymentQueue(queue: SKPaymentQueue!, updatedTransactions transactions: [AnyObject]!){
         for transaction:AnyObject in transactions {
             if let trans:SKPaymentTransaction = transaction as? SKPaymentTransaction {
                     switch trans.transactionState {
@@ -47,16 +47,16 @@ class ProductTableMapViewController: PFQueryTableViewController, SKPaymentTransa
                 
                     };
             }
-        
+
         }
-    }
+    }*/
     
     @IBAction func optionIndexChanged(sender: UISegmentedControl) {
         
         self.loadObjects()
     }
     
-    func getProductInfo()
+   /* func getProductInfo()
     {
         if SKPaymentQueue.canMakePayments() {
         let request = SKProductsRequest(productIdentifiers:
@@ -64,7 +64,7 @@ class ProductTableMapViewController: PFQueryTableViewController, SKPaymentTransa
         request.delegate = self
         request.start()
         }
-    }
+    }*/
     
     
 
@@ -72,8 +72,8 @@ class ProductTableMapViewController: PFQueryTableViewController, SKPaymentTransa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SKPaymentQueue.defaultQueue().addTransactionObserver(self)
-        getProductInfo()
+        //SKPaymentQueue.defaultQueue().addTransactionObserver(self)
+        //getProductInfo()
     }
     
     
