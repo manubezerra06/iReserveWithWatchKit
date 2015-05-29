@@ -12,6 +12,7 @@ import Foundation
 
 class NotificationController: WKUserNotificationInterfaceController {
 
+    @IBOutlet var notificationLabel: WKInterfaceLabel!
     override init() {
         // Initialize variables here.
         super.init()
@@ -51,6 +52,8 @@ class NotificationController: WKUserNotificationInterfaceController {
         
         
         completionHandler(.Custom)
+        
+        notificationLabel.setText(remoteNotification["customKey"] as? String)
     }
     
 }
