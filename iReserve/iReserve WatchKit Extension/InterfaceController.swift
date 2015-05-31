@@ -20,7 +20,7 @@ class InterfaceController: WKInterfaceController {
         
         self.handAnimation.setImageNamed("AppIconSmall@2x_")
         
-        self.handAnimation.startAnimatingWithImagesInRange(NSMakeRange(0, 67), duration: 3, repeatCount: 2)
+        self.handAnimation.startAnimatingWithImagesInRange(NSMakeRange(0, 67), duration: 3, repeatCount: 1)
         
         // Configure interface objects here.
         loadTableData()
